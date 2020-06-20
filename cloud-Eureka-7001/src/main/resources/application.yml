@@ -1,0 +1,16 @@
+server:
+  port: 7001
+
+eureka:
+  instance:
+    hostname: eureka7001.com         #eureka服务实例名称
+    #eureka服务端在接收上次心跳的等待时间，超时将会被踢出服务
+    lease-expiration-duration-in-seconds: 90
+    #eureka客户端向服务端发送的心跳时间间隔
+    lease-renewal-interval-in-seconds:  30
+  client:
+    register-with-eureka: false #不向注册中心注册自己
+    fetch-registry: false       #表示自己就是注册中兴，职责就是维护服务实例
+    service-url:
+      #设置Eureka server交互的地址 查询服务和注册服务都需要这个地址
+      defaultZone: http://eureka7002.com:7002/eureka
