@@ -58,4 +58,9 @@ public class PaymentController {
         }
         return discoveryClient;
     }
+
+        @GetMapping("/getPort/{id}")
+        public String getPort(@PathVariable("id") Long id){
+            return port+";id="+id;
+        }
 }

@@ -43,4 +43,10 @@ public class PaymentController {
         }
         return new CommonResult(200,"端口号为： "+port+"，获取成功",null);
     }
+
+
+    @GetMapping("/getPort/{id}")
+    public String getPort(@PathVariable("id") Long id){
+        return port+";id="+id;
+    }
 }
