@@ -1,0 +1,18 @@
+server:
+  port: 9800
+
+spring:
+  application:
+    name: nacos-consumer-order
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+payment:
+  server_url: http://nacos-provider-payment
