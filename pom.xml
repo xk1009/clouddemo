@@ -30,6 +30,7 @@
         <module>cloud-alibaba-consumer-9800</module>
         <module>cloud-alibaba-config-3377</module>
         <module>cloud-alibaba-sentinel-service-8100</module>
+        <module>cloud-alibaba-sentinel-client-84</module>
     </modules>
     <!--这个父工程是用来聚合的-->
     <packaging>pom</packaging>
